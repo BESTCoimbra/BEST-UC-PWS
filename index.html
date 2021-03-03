@@ -1,254 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <!-- <title>Responsive Drop-down Menu Bar</title> -->
+      <link rel="stylesheet" href="style.css">
+      <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <nav>
+         
+         <div class="logo"><img src="images/logo.png" alt="BEST Coimbra">
+         </div>
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/stylesheets/application.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:500,700" rel="stylesheet">
-    <link rel="icon" type="image/png" href="assets/images/logo_best.png">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+         <label for="btn" class="icon">
+         <span class="fa fa-bars"></span>
+         </label>
+         <input type="checkbox" id="btn">
+         <ul>
 
+            <li><a href="#">Abou Us</a></li>
+            <li>
+            <label for="btn-1" class="show">Projects +</label>
+               <a href="#">Projects</a>
+               <input type="checkbox" id="btn-1">
+               <ul>
+                  <li><a href="#">EBEC</a></li>
+                  <li><a href="#">CIEF</a></li>
+                  <li><a href="#">Summer Course</a></li>
+                  <li><a href="#">BGD</a></li>
+               </ul>
+            </li>
+            <li><a href="#">Partrnerships</a></li>
+            <li><a href="#">Contacts</a></li>
+         </ul>
+      </nav>
+      <div class="content">
+         <header>Lorem ipsum dolor sit amets</header>
+         <p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus scelerisque quam at ex varius, eget interdum odio venenatis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce vitae hendrerit magna, lacinia blandit odio. Maecenas nec massa sem. Maecenas vel diam sit amet magna venenatis vehicula in sit amet purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi tempus libero justo, vitae dignissim elit porta non. Nam volutpat justo magna, eu ullamcorper purus bibendum ac.
 
-    <title>BEST Coimbra</title>
-</head>
+Pellentesque vitae dui in ex dictum scelerisque. Aliquam in risus quis dolor commodo semper eget ut nulla. Nam iaculis elit turpis, in auctor neque imperdiet eu. Sed porttitor, diam non iaculis rutrum, arcu neque suscipit massa, sed bibendum metus lectus at nibh. Quisque egestas semper felis eu volutpat. Phasellus congue, nisl id pharetra feugiat, neque ex posuere elit, vel convallis dui leo sed nisl. Nam et sem justo. Etiam feugiat elit eu magna mollis ornare. Praesent eu justo tristique, porta augue vel, tincidunt metus. Praesent risus nisi, consectetur bibendum dui nec, tempor pellentesque felis. Mauris facilisis auctor ex a tincidunt. Donec tincidunt mi non pellentesque facilisis. Maecenas feugiat ex ut ullamcorper pulvinar. Suspendisse interdum id dolor vitae fringilla.
 
-<body>
-    <!-- NAVIGATION BAR -->
-    <header id="main_header">
-        <a href="index.html">
-            <img id = "logo_best" alt="Logo BEST Coimbra" src="assets/images/logo_best_coimbra.png">
-        </a>
-        <nav>
-            <div>
-                <a href="src/best/timeline.html" class="ib" id="best_dropdown"><h2>BEST</h2></a>
-            </div>
-            <div class="nav_dropdown_best">
-                <a href="src/best/about.html"><h2>About</h2></a>
-                <a href="src/best/timeline.html"><h2>Timeline</h2></a>
-            </div>
-            <div>
-                <a href="src/companies/companies.html" class="ib" id="companies_dropdown"><h2>Companies</h2></a>
-            </div>
-            <div class="nav_dropdown_companies">
-                <a href="src/companies/_events.html"><h2>Events</h2></a>
-                <a href="src/companies/_partnerships.html"><h2>Partnerships</h2></a>
-            </div>
-            <div>
-                <a href="src/students/students.html" class="ib" id="students_dropdown"><h2>Students</h2></a>
-            </div>
-            <div class="nav_dropdown_students">
-                <a href="src/students/_events.html"><h2>Events</h2></a>
-                <a href="src/students/_courses.html"><h2>Courses</h2></a>
-                <a href="src/students/_recruitment.html"><h2>Recruitment</h2></a>
-            </div>
-            <a href="src/contacts.html"><h2>Contacts</h2></a>
-            <a href="src/members.html"><i class="fas fa-user-circle fa-2x"></i></a>
-        </nav>
+Duis aliquam magna a eros iaculis, quis vulputate arcu tempor. Etiam commodo mauris vitae mi egestas eleifend. Proin euismod et ante ut facilisis. Fusce non sagittis orci. Quisque laoreet laoreet augue, at ornare erat dapibus non. Sed vitae turpis ac dolor rhoncus pharetra. Integer convallis ligula magna, id pellentesque dolor sodales in.
 
-        <div class="hamburger">
-            <i class="fas fa-bars"></i>
+Vivamus pellentesque tincidunt arcu, luctus porttitor nisi ornare vel. In pretium erat et neque tempus, eget porta tortor ultricies. Praesent eget vulputate mi. Nunc aliquet consectetur orci ut lacinia. Mauris rhoncus in odio facilisis viverra. Donec eu pellentesque eros, non gravida lacus. Cras blandit risus eget purus consequat, sit amet scelerisque leo rhoncus. Vestibulum in diam justo.
 
-            <div class="hamburger_dropdown">
-                <a href="src/best/about.html"><h2>BEST</h2></a>
-                <a href="src/companies/companies.html"><h2>Companies</h2></a>
-                <a href="src/students/students.html"><h2>Students</h2></a>
-                <a href="src/contacts.html"><h2>Contacts</h2></a>
-                <a href="src/members.html"><i class="fas fa-users"></i></a>
-            </div>
-        </div>
-    </header>
-
-
-    <main>
-        <!-- LANDING -->
-        <div class="landing full-screen">
-            <div class="title">
-                <h1 id="title1">Join for Improvement,</h1>
-                <h1 id="title2">Stay for the Spirit.</h1>
-            </div>
-
-            <div class="slide">
-                <div class="slider_images"> <!-- Slide Images -->
-                    <img class="slide3" alt="Imagem Motivational Weekend" src="assets/images/foto_MW2018_2sem.jpg">
-                    <img class="slide2" alt="Summer Course slide photo" src="assets/images/foto_sc2018.JPG">
-                    <img class="slide1" alt="Imagem Recruitment" src="assets/images/foto_recrutamento.jpg">
-                </div>
-
-                <div class="slider_description"> <!-- Slide Description -->
-                    <h2 class="slide3">Motivational Weekend</h2>
-                    <p class="slide3">A biannual event that we organize to motivate and integrate our new members.</p>
-                    <h2 class="slide2">Summer Course</h2>
-                    <p class="slide2">This year’s theme of BEST Coimbra’s Summer Course was about the automobilistic industry.</p>
-                    <h2 class="slide1">Spring Recruitment</h2>
-                    <p class="slide1">The best opportunity to challenge yourself and show us that you can belong in our family.</p>
-                </div>
-
-                <div class="slider_nav"> <!-- Slide Navigation -->
-                    <i class="fas fa-angle-left fa-w-6 fa-3x" id="arrow_left"></i>
-                    <i class="fas fa-angle-right fa-w-6 fa-3x" id="arrow_right"></i>
-                </div>
-            </div>
-        </div>
-
-        <!-- PARTNERS AND TARGET AUDIENCE -->
-        <div class="index_content">
-            <div class="students_card"> <!-- For Students -->
-                <a href="src/students/students.html">
-                    <div class="students_card_content">
-                        <h2>For Students</h2>
-                        <p>BEST helps technology students to develop themselves by learning new soft and hard skills, and to be more open-minded in order to understand different cultures. Through events made by students for students, BEST creates plenty of opportunities to meet and learn with each other and also provides the opportunity to improve the ability of team work.</p>
-                    </div>
-                </a>
-            </div>
-
-
-            <div class="companies_card"> <!-- For Companies -->
-                <a href="src/companies/companies.html">
-                    <div class="companies_card_content">
-                        <h2>For Companies</h2>
-                        <p>One of BEST Coimbras' biggest goals is to connect students and companies. To achieve this goal we’ve created several events throughout the years, the most notable ones are EBEC and BEW, to help companies reach the student community. In addition we also develop marketing partnerships that allow companies to share their work and career opportunities through our network. </p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="institutional_card"> <!-- Institutional Partners -->
-                <div class="institutional_card_content">
-                    <h2>Institutional Partners</h2>
-
-                    <a target="_blank" href="http://https://www.uc.pt/en/fctuc">
-                        <img alt="Logo FCTUC" src="assets/images/partners/logo_FCTUC.png">
-                    </a>
-                    <a target="_blank" href="https://www.uc.pt/fctuc/deec/">
-                        <img alt="Logo DEEC" src="assets/images/partners/logo_DEEC.jpg">
-                    </a>
-
-                    <a target="_blank" href="http://www.uc.pt/fctuc/dei/">
-                        <img alt="Logo DEI" src="assets/images/partners/logo_DEI.png">
-                    </a>
-
-                    <a target="_blank" href="http://www.ipdj.pt/">
-                        <img alt="Logo IPDJ" src="assets/images/partners/logo_ipdj.png">
-                    </a>
-
-                </div>
-            </div>
-
-            <div class="annual_card"> <!-- Annual Partners -->
-                <div class="annual_card_content">
-                    <h2>Non-institutional Partners</h2>
-
-                    <a target="_blank" href="http://space.ipn.pt/">
-                        <img alt="Logo ESA BIC" src="assets/images/partners/logo_esabic.png">
-                    </a>
-                    <a target="_blank" href="https://www.criticalsoftware.com/pt/homepage">
-                        <img alt="Logo Critical Software" src="assets/images/partners/logo_critical.png">
-                    </a>
-
-                     <a target="_blank" href="https://www.bisilque.com/">
-                        <img alt="Logo Bi-silique" src="assets/images/partners/logo_Bisilque.png">
-                    </a>
-
-                     <a target="_blank" href="https://www.boldint.pt/">
-                        <img alt="Logo BOLD International" src="assets/images/partners/logo_boldint.png">
-                    </a>
-
-                     <a target="_blank" href="https://www.borgwarner.com/home">
-                        <img alt="Logo Borg Warner" src="assets/images/partners/logo_BorgWarner.png">
-                    </a>
-
-                     <a target="_blank" href="https://www2.deloitte.com/pt/pt.html">
-                        <img alt="Logo Deloitte" src="assets/images/partners/logo_deloitte.png">
-                    </a>
-
-                     <a target="_blank" href="https://innowave.tech/">
-                        <img alt="Logo Innowave" src="assets/images/partners/logo_innowave.png">
-                    </a>
-
-                     <a target="_blank" href="http://www.martifer.pt/pt/">
-                        <img alt="Logo Martifer" src="assets/images/partners/logo_martifer.jpg">
-                    </a>
-
-                     <a target="_blank" href="https://www.mercedes-benz.pt/">
-                        <img alt="Logo Merdes-Benz" src="assets/images/partners/logo_mercedes.jpg">
-                    </a>
-
-                     <a target="_blank" href="http://www.thenavigatorcompany.com/">
-                        <img alt="Logo Navigator" src="assets/images/partners/logo_navigator.jpg">
-                    </a>
-
-                     <a target="_blank" href="https://www.outsystems.com/">
-                        <img alt="Logo OutSystems" src="assets/images/partners/logo_outsystems.png">
-                    </a>
-
-                     <a target="_blank" href="https://skyline.be/">
-                        <img alt="Logo Skyline" src="assets/images/partners/logo_skyline.png">
-                    </a>
-
-                     <a target="_blank" href="https://stratioautomotive.com/">
-                        <img alt="Logo Stratio Automotive" src="assets/images/partners/logo_stratio.jpg">
-                    </a>
-
-                     <a target="_blank" href="https://www.technipfmc.com/">
-                        <img alt="Logo Technip" src="assets/images/partners/logo_technip.png">
-                    </a>
-
-                </div>
-            </div>
-        </div>
-    </main>
-
-
-    <footer>
-        <div class="contacts"> <!-- top left-->
-            <div><!-- mail -->
-                <i class="far fa-envelope fa-3x"></i>
-                <p class="ib">coimbra@best.eu.org</p>
-            </div>
-        </div>
-
-        <div class="social"> <!-- top right -->
-            <div>
-                <a href="https://www.facebook.com/BESTCoimbra/" target="_blank">
-                    <i class="fab fa-facebook-square fa-3x" style="color: white"></i>
-                </a>
-                <a href="https://www.linkedin.com/company/11337545/" target="_blank">
-                    <i class="fab fa-linkedin-in fa-3x" style="color: white; padding-left:10px"></i>
-                </a>
-            </div>
-            <div>
-                <a href="https://twitter.com/BESTCoimbra" target="_blank">
-                    <i class="fab fa-twitter fa-3x" style="color: white"></i>
-                </a>
-                <a href="https://www.instagram.com/bestcoimbra/" target="_blank">
-                    <i class="fab fa-instagram fa-3x" style="color: white; padding-left:10px" ></i>
-                </a>
-            </div>
-        </div>
-
-        <div class="navigation"> <!-- navigation -->
-            <div class="nav_top">
-                <a class="ib" href="src/companies/companies.html"><h2>Companies</h2></a>
-                <a class="ib" href="src/students/students.html"><h2>Students</h2></a>
-                <a class="ib" href="src/members.html"><h2>Members</h2></a>
-            </div>
-            <div class="nav_bottom">
-                <a class="ib" href="src/best/about.html"><h2>BEST</h2></a>
-                <a class="ib" href="src/contacts.html"><h2>Contacts</h2></a>
-            </div>
-        </div>
-
-        <p class="copyright">© 2019 BEST Coimbra. All rights reserved.</p>
-
-        <img class="decoration" src="assets/images/footer_img.png" alt="Corner Footer Decoration">
-    </footer>
-
-    <script src="assets/js/nav_dropdowns.js"></script>
-    <script src="assets/js/index_slide.js"></script>
-    <script src="assets/js/header_animation.js"></script>
-
-
-</body>
+Sed nulla libero, consectetur eu fringilla eget, ultrices sed risus. Nunc cursus lectus quis enim ultrices, interdum ultrices mauris porta. Sed euismod sollicitudin libero, sed lacinia diam tempor in. Aenean neque orci, varius eleifend diam sit amet, commodo pretium lacus. Donec eu arcu sit amet turpis hendrerit aliquet. Duis pretium, lorem in placerat vulputate, sem mauris rutrum justo, vitae tincidunt ipsum diam ac ipsum. Ut ornare non justo in tristique. Nam laoreet aliquet diam nec sagittis.)</p>
+      </div>
+      <script>
+         $('.icon').click(function(){
+           $('span').toggleClass("cancel");
+         });
+      </script>
+   </body>
 </html>
