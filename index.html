@@ -1,59 +1,148 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal - www.codingnepalweb.com -->
-<html lang="en" dir="ltr">
-   <head>
-      <meta charset="utf-8">
-      <!-- <title>Responsive Drop-down Menu Bar</title> -->
-      <link rel="stylesheet" href="style.css">
-      <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
-   <body>
-      <nav>
-         
-         <div class="logo"><img src="images/logo.png" alt="BEST Coimbra">
-         </div>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BEST Coimbra</title>
+	<link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/fixed.css">
+</head>
 
-         <label for="btn" class="icon">
-         <span class="fa fa-bars"></span>
-         </label>
-         <input type="checkbox" id="btn">
-         <ul>
+<body>
 
-            <li><a href="#">Abou Us</a></li>
-            <li>
-            <label for="btn-1" class="show">Projects +</label>
-               <a href="#">Projects</a>
-               <input type="checkbox" id="btn-1">
-               <ul>
-                  <li><a href="#">EBEC</a></li>
-                  <li><a href="#">CIEF</a></li>
-                  <li><a href="#">Summer Course</a></li>
-                  <li><a href="#">BGD</a></li>
-               </ul>
-            </li>
-            <li><a href="#">Partrnerships</a></li>
-            <li><a href="#">Contacts</a></li>
-         </ul>
-      </nav>
-      <div class="content">
-         <header>Lorem ipsum dolor sit amets</header>
-         <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus scelerisque quam at ex varius, eget interdum odio venenatis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce vitae hendrerit magna, lacinia blandit odio. Maecenas nec massa sem. Maecenas vel diam sit amet magna venenatis vehicula in sit amet purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi tempus libero justo, vitae dignissim elit porta non. Nam volutpat justo magna, eu ullamcorper purus bibendum ac.
+	<!--Start Home Section-->
+	<div id="About">
 
-Pellentesque vitae dui in ex dictum scelerisque. Aliquam in risus quis dolor commodo semper eget ut nulla. Nam iaculis elit turpis, in auctor neque imperdiet eu. Sed porttitor, diam non iaculis rutrum, arcu neque suscipit massa, sed bibendum metus lectus at nibh. Quisque egestas semper felis eu volutpat. Phasellus congue, nisl id pharetra feugiat, neque ex posuere elit, vel convallis dui leo sed nisl. Nam et sem justo. Etiam feugiat elit eu magna mollis ornare. Praesent eu justo tristique, porta augue vel, tincidunt metus. Praesent risus nisi, consectetur bibendum dui nec, tempor pellentesque felis. Mauris facilisis auctor ex a tincidunt. Donec tincidunt mi non pellentesque facilisis. Maecenas feugiat ex ut ullamcorper pulvinar. Suspendisse interdum id dolor vitae fringilla.
+	<!--Navigation-->
+	<div class="navigation-wrap bg-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav class="navbar navbar-expand-md navbar-light">
+					
+						<a class="navbar-brand" href="index.html" target="_blank"><img src="img/logo.png" alt=""></a>	
+						
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav ml-auto py-4 py-md-0">
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link" href="#">About Us</a>
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Projects</a>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="#">CIEF</a>
+										<a class="dropdown-item" href="#">EBEC</a>
+										<a class="dropdown-item" href="#">SC</a>
+										<a class="dropdown-item" href="#">BGD</a>
+									</div>
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link" href="#">Partnerships</a>
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link active" href="#">Contacts</a>
+								</li>
+							</ul>
+						</div>
+						
+					</nav>		
+				</div>
+			</div>
+		</div>
+	</div>
 
-Duis aliquam magna a eros iaculis, quis vulputate arcu tempor. Etiam commodo mauris vitae mi egestas eleifend. Proin euismod et ante ut facilisis. Fusce non sagittis orci. Quisque laoreet laoreet augue, at ornare erat dapibus non. Sed vitae turpis ac dolor rhoncus pharetra. Integer convallis ligula magna, id pellentesque dolor sodales in.
+	<!--Start Images Slider Section-->
+	<div id="carouselExamppleIndicators" class="carousel slide" data-ride="carousel" data-interval="7000">
+			<ol class="carousel-indicators">
+					<li data-target="#carouselExamppleIndicators" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExamppleIndicators" data-slide-to="1"></li>
+					<li data-target="#carouselExamppleIndicators" data-slide-to="2"></li>
+			</ol>	
+			<div class="carousel-inner" role="listbox">
+					<!--Slide 1-->
+					<div class="carousel-item active" style="background-image: 	url(img/intro.jpg)";></div>
+					<!--Slide 2-->
+					<div class="carousel-item" style="background-image: 	url(img/one.jpg)";></div>
+					<!--Slide 3-->
+					<div class="carousel-item" style="background-image: 	url(img/two.jpg)";></div>
+			</div>
+	</div>	
 
-Vivamus pellentesque tincidunt arcu, luctus porttitor nisi ornare vel. In pretium erat et neque tempus, eget porta tortor ultricies. Praesent eget vulputate mi. Nunc aliquet consectetur orci ut lacinia. Mauris rhoncus in odio facilisis viverra. Donec eu pellentesque eros, non gravida lacus. Cras blandit risus eget purus consequat, sit amet scelerisque leo rhoncus. Vestibulum in diam justo.
+	</div>
+	<!--End Home Section-->
 
-Sed nulla libero, consectetur eu fringilla eget, ultrices sed risus. Nunc cursus lectus quis enim ultrices, interdum ultrices mauris porta. Sed euismod sollicitudin libero, sed lacinia diam tempor in. Aenean neque orci, varius eleifend diam sit amet, commodo pretium lacus. Donec eu arcu sit amet turpis hendrerit aliquet. Duis pretium, lorem in placerat vulputate, sem mauris rutrum justo, vitae tincidunt ipsum diam ac ipsum. Ut ornare non justo in tristique. Nam laoreet aliquet diam nec sagittis.)</p>
-      </div>
-      <script>
-         $('.icon').click(function(){
-           $('span').toggleClass("cancel");
-         });
-      </script>
-   </body>
+
+
+
+<!--- Start about Section -->
+<div id="about" class="offset">
+
+<div class="col-12 narrow text-center">
+	<h1>Lorem Ipsum</h1>
+	<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod orci sit amet lacus dignissim consequat. In hac habitasse platea dictumst. Morbi fermentum erat a nunc euismod, eu imperdiet felis placerat. Mauris fringilla auctor lacus nec tempus. Vestibulum erat eros, varius vitae risus a, posuere suscipit risus. Aliquam nec odio nisi. Etiam sit amet maximus magna. Aliquam pretium ipsum tempus, ultrices est nec, congue lorem. Donec tincidunt, arcu eget pretium scelerisque, nibh metus fringilla felis, scelerisque tempus sem elit eget elit. Phasellus ut est convallis, ultrices dui in, mattis est. Integer ultricies tempus mauris, pretium pellentesque mi semper a. Duis maximus mi sed tortor mattis, quis congue ligula rhoncus. Nam sed imperdiet nunc, at fringilla erat. Nunc eget libero eu nisl lobortis elementum. Sed suscipit rhoncus lectus, nec rhoncus purus posuere eget.
+
+Proin suscipit et diam sit amet aliquam. Morbi luctus ex id tortor fermentum, nec tincidunt leo dignissim. Aliquam eget dapibus odio. Praesent id maximus massa, sed fringilla sem. Phasellus rutrum laoreet erat in commodo. Vivamus eget facilisis turpis. Nullam maximus velit ut finibus posuere. Phasellus suscipit, urna vel tincidunt finibus, est justo faucibus odio, tempus eleifend elit justo sit amet tellus. Fusce gravida, magna eget dignissim scelerisque, magna felis suscipit lorem, non pulvinar orci velit quis massa. Integer suscipit interdum dolor eu cursus. Quisque fermentum quam ornare metus pulvinar aliquam. In consectetur quis augue in tincidunt. Morbi laoreet mauris et nulla consequat vestibulum. Quisque sit amet odio volutpat purus pharetra tincidunt at nec enim. Duis fermentum vestibulum augue nec egestas.
+
+Proin a ornare neque. Nullam nisl magna, finibus eu ornare sit amet, molestie vitae velit. Pellentesque consequat mauris lorem, at pretium nisl laoreet vel. Ut sed dolor ut dolor accumsan auctor et vel ante. Quisque id bibendum lacus, eget consequat nibh. Phasellus mollis mauris augue, et sollicitudin massa maximus eu. Praesent eros lorem, bibendum ac eros sed, rhoncus luctus justo. Maecenas tempus lacus sit amet est aliquet tristique.
+
+Cras vestibulum feugiat nisl, non ullamcorper velit pulvinar nec. Ut tincidunt sem quis neque convallis, ut dapibus nunc scelerisque. Sed mollis magna eu ornare imperdiet. Vivamus ut nibh scelerisque, placerat massa eu, interdum lectus. Nulla ac risus vel lacus consequat molestie id eget ipsum. Ut quis dui ornare lectus efficitur euismod. Donec blandit ex nunc, in sodales metus vestibulum eu. Maecenas a risus vel enim maximus sagittis ac vitae quam. Vestibulum sed feugiat elit, id feugiat tortor. Etiam vestibulum tristique finibus.
+
+Pellentesque ac ligula fringilla, posuere magna eu, dignissim sapien. Praesent laoreet molestie quam quis maximus. Aenean ut posuere nibh, ac elementum ex. Curabitur ut rutrum neque. Vivamus sit amet diam massa. Vivamus vehicula ultrices nibh, non blandit tortor euismod eu. Etiam pulvinar enim euismod, volutpat
+</div>
+
+</div>
+<!--- End about Section -->
+
+<!--- Star Footer Section -->
+
+<footer>
+	<div class="row justify-content-center ">
+		<div class="col-md-4"  align="center" >
+		<p><i class="fas fa-envelope align-middle"></i>coimbra@best.eu.org</p>
+
+		</div>
+		<div class="col-md-4"  align="center">
+		<p>&copy; 2021 BEST Coimbra. All rights reserved.</p>
+		</div>
+		<div class="col-md-4 icons"  align="center">
+		<a href="https://www.facebook.com/BESTCoimbra/" target="_blank"><i class="fab fa-facebook"></i></a>
+		<a href="https://www.linkedin.com/company/11337545/" target="_blank"><i class="fab fa-linkedin"></i></a>
+		<a href="https://www.instagram.com/bestcoimbra/" target="_blank"><i class="fab fa-instagram"></i></a>
+		</div>
+		</div>
+
+		
+	</div>
+</footer>
+
+<!--- End Footer Section -->
+
+<!--- Script Source Files -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.15.0/js/all.js"></script>
+<script type="text/javascript">
+	(function($) { "use strict";
+
+		//Menu On Hover
+		
+	$('body').on('mouseenter mouseleave','.nav-item',function(e){
+			if ($(window).width() > 750) {
+				var _d=$(e.target).closest('.nav-item');_d.addClass('show');
+				setTimeout(function(){
+				_d[_d.is(':hover')?'addClass':'removeClass']('show');
+				},1);
+			}
+	});	
+	
+  })(jQuery); 
+</script>
+<!--- End of Script Source Files -->
+
+</body>
 </html>
