@@ -4,15 +4,14 @@
 
 	//===== Prealoder
 
-	/*window.onload = function () {
-		window.setTimeout(fadeout, 200);
+	var loader = document.querySelector(".loader")
+
+	window.addEventListener("load",vanish);
+
+	function vanish() {
+
+		loader.classList.add("disappear");
 	}
-
-	function fadeout() {
-		document.querySelector('.preloader').style.opacity = '0';
-		document.querySelector('.preloader').style.display = 'none';
-	}*/
-
 
 	/*=====================================
 	Sticky
@@ -33,6 +32,31 @@
 	navbarToggler.addEventListener('click', function () {
 		navbarToggler.classList.toggle("active");
 	})
+
+	//======== tiny slider
+	tns({
+		container: '.partners-carousel',
+		autoplay: true,
+		autoplayButtonOutput: false,
+		mouseDrag: true,
+		gutter: 15,
+		nav: false,
+		controls: false,
+		responsive: {
+			0: {
+				items: 1,
+			},
+			540: {
+				items: 2,
+			},
+			768: {
+				items: 3,
+			},
+			992: {
+				items: 4,
+			}
+		}
+	});
 
 	//WOW Scroll Spy
 	var wow = new WOW({
