@@ -58,6 +58,28 @@
 		}
 	});
 
+	tns({
+		container: '.testimonials-carousel',
+		autoplay: true,
+		autoplayButtonOutput: false,
+		mouseDrag: true,
+		gutter: 15,
+		nav: false,
+		controls: false,
+		autoplayTimeout:7000,
+		responsive: {
+			0: {
+				items: 1,
+			},
+			768: {
+				items: 2,
+			},
+			992: {
+				items: 3,
+			},
+		}
+	});
+
 	//WOW Scroll Spy
 	var wow = new WOW({
 		//disabled for mobile

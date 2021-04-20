@@ -20,6 +20,7 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      /* border: 1px solid red;*/
     }
 
     /*===== COMMON =====*/
@@ -139,6 +140,7 @@
       }
     }
 
+    /*===== Preloader =====*/
     .loader{
       position: fixed;
       top: 0;
@@ -185,7 +187,7 @@
       }
     }
 
-    /*===== All Button Style =====*/
+    /*===== Buttons Style =====*/
     .hero-btn {
       display: inline-block;
       font-weight: 400;
@@ -540,7 +542,7 @@
     /*===== SLIDER =====*/
 
     .carousel-item{
-      height: 850px;
+      height: 700px;
     }
 
     .carousel.slide{
@@ -552,14 +554,15 @@
 
     .hero-section {
       position: relative;
-      height: 850px;
+      height: 700px;
       display: flex;
       align-items: center;
     }
 
     @media only screen and (min-width: 1400px) {
       .hero-section {
-        height: 850px;
+        margin-top: 70px;
+        height: 700px;
       }
     }
 
@@ -611,7 +614,7 @@
 
     @media only screen and (min-width: 1400px) {
       .hero-section .hero-content-wrapper h2 {
-        padding-top: 170px;
+        padding-top: 140px;
       }
     }
 
@@ -705,18 +708,6 @@
 .hero-section .hero-img .image {
   width: 100%;
 }
-
-.partners-section .partners-wrapper .partners-carousel .partners-logo {
-  padding: 10px;
-  text-align: center;
-  margin: auto;
-}
-
-.partners-section .partners-wrapper .partners-carousel .partners-logo img {
-  max-width: 270px;
-  width: 100%;
-}
-
 
 /*===========================
     04. who CSS 
@@ -818,18 +809,102 @@
       text-align: center;
     }
 
-/*===========================
-    03. Lorem CSS
+
+    /*===========================
+    05. Coimbra CSS 
     ===========================*/
 
-    .narrow {
-      width: 75%;
-      margin: 0 auto;
-      padding-top: 2rem;
+    .coimbra .content {
+      margin-top: 10px;
+      background-color: #f6f9ff;
+      padding: 40px;
+    }
+    .coimbra .content h3{
+      margin-bottom: 10px;
+    }
+    .coimbra img.dot-shape {
+      width: 20%;
+      position: relative;
+      left:-30px;
+      bottom: 30px;
+      z-index: 1;
+      /* border: 2px solid red;*/
     }
 
+   /*===========================
+    06. Testimonials CSS 
+    ===========================*/
+
+    .testimonials-section {
+      margin-top: 55px;
+      margin-bottom: 15px;
+      background: linear-gradient(aliceblue  0%,transparent 100%);
+    }
+
+    .testimonials-section .testimonials-wrapper h2{
+      padding: 15px;
+      margin-bottom: -15px;
+    }
+
+    .testimonials-section .testimonials-wrapper .testimonials-carousel {
+      height:400px;
+    }
+
+    .testimonials-section .testimonials-wrapper .testimonials-carousel  .card {
+      background: #fff;
+      box-shadow: 0 8px 30px -7px #c9dff0;
+      margin: 0 20px;
+      padding: 0 10px;
+      border-radius: 20px;
+      border: 0;
+    }
+    .testimonials-section .testimonials-wrapper .testimonials-carousel  .card .card-img-top {
+      max-width: 100px;
+      border-radius: 50%;
+      margin: 15px auto 0;
+      box-shadow: 0 8px 20px -4px #95abbb;
+      width: 100px;
+      height: 100px;
+    }
+    .testimonials-section .testimonials-wrapper .testimonials-carousel .card h5 {
+      color: #01b0f8;
+      font-size: 21px;
+      line-height: 1.3;
+    }
+    .testimonials-section .testimonials-wrapper .testimonials-carousel .card h5 span {
+      font-size: 18px;
+      color: #666666;
+    }
+    .testimonials-section .testimonials-wrapper .testimonials-carousel .card p {
+      font-size: 18px;
+      color: #555;
+      padding-bottom: 15px;
+    }
+
+    /*===========================
+    07. Partners CSS 
+    ===========================*/
+
+    .partners-section {
+      margin-top: 25px;
+      margin-bottom: 15px;
+    }
+
+    .partners-section .partners-wrapper .partners-carousel .partners-logo {
+      padding: 10px;
+      text-align: center;
+      margin: auto;
+    }
+
+    .partners-section .partners-wrapper .partners-carousel .partners-logo img {
+      max-width: 270px;
+      width: 100%;
+    }
+
+    
+
 /*===========================
-    04. Footer CSS
+    08. Footer CSS
     ===========================*/
 
     .footer {
