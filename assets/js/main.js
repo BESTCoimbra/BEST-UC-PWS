@@ -33,6 +33,13 @@
 		navbarToggler.classList.toggle("active");
 	})
 
+	//WOW Scroll Spy
+	var wow = new WOW({
+		//disabled for mobile
+		mobile: false
+	});
+	wow.init();
+
 	//======== tiny slider
 	tns({
 		container: '.partners-carousel',
@@ -80,12 +87,7 @@
 		}
 	});
 
-	//WOW Scroll Spy
-	var wow = new WOW({
-		//disabled for mobile
-		mobile: false
-	});
-	wow.init();
+	
 
 })();
 
